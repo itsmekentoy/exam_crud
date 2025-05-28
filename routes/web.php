@@ -14,4 +14,7 @@ Route::controller(CredentialController::class)->group(function () {
 });
 Route::controller(DashboardMainController::class)->group(function () {
     Route::get('/dashboard', 'index')->name('dashboard');
+    Route::post('/add-sales', 'addSalesData')->name('addSalesData');
+    Route::DELETE('deleteSalesData/{id}', 'deleteSalesData')->name('deleteSalesData');
+    Route::post('/update-sales', 'updateSalesData')->name('updateSalesData');
 });

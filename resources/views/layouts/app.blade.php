@@ -47,6 +47,10 @@
             console.log('Custom scripts loaded');
         });
     </script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -54,11 +58,8 @@
             @yield('content')
         </main>
     </div>
-   
-
-   
-
-   
-
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

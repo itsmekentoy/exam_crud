@@ -41,7 +41,7 @@
 
                         <div class="mb-3 form-check">
                             <!-- add button or link for register -->
-                            <a href="{{ route('register') }}" class="btn btn-link p-0">Don't have an account? Register</a>
+                            <a href="{{ route('login') }}" class="btn btn-link p-0">Already have an account</a>
                              
                         </div>
 
