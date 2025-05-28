@@ -79,4 +79,10 @@ class CredentialController extends Controller
         //redirect to dashboard route with success message
         return redirect()->route('dashboard')->with('success', 'Registration successful! Welcome, ' . $user->name);
     }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        Session::flush();
+        return redirect()->route('login')->with('success', 'You have been logged out successfully.');
+    }
 }
